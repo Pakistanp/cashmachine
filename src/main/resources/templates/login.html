@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert PIN</title>
+</head>
+<body>
+    <fieldset>
+        <form action="#" method="post" th:action="@{/}" th:object="${card}">
+            <label>PIN
+                <input hidden type='username' name='username' value='77372828'/>
+                <input type='password' name='password'/>
+                <input name="submit" type="submit"/>
+            </label>
+        </form>
+    </fieldset>
+</body>
+</html>

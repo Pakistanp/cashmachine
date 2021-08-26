@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Pin</title>
+</head>
+<body>
+<fieldset>
+    <form action="/changepin" method="post" th:action="@{/changepin}" th:object="${card}">
+        <div th:if="${card.pin == null}">
+            <label>Enter old PIN
+                <input type='password' name='password' th:field="*{pin}"/>
+                <input type="submit" name="oldPin" />
+            </label>
+        </div>
+        <div th:unless="${card.pin == null}">
+            <label>Enter new PIN
+                <input type='password' name='password' th:field="*{pin}"/>
+                <input type="submit"/>
+            </label>
+        </div>
+    </form>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose amount</title>
+</head>
+<body>
+    <fieldset>
+        <a th:href="@{/withdraw/10}"><button>10</button></a>
+        <a th:href="@{/withdraw/20}"><button>20</button></a>
+        <a th:href="@{/withdraw/50}"><button>50</button></a>
+        <a th:href="@{/withdraw/100}"><button>100</button></a>
+        <a th:href="@{/withdraw/200}"><button>200</button></a>
+        <a th:href="@{/withdraw/500}"><button>500</button></a>
+
+        <!--<form action="#" method="get" th:action="@{/withdraw/{amount}(amount = ${amount})}">
+        <form action="#" method="get" th:action="@{|/withdraw/${amount}|}">
+            <label>Other value
+                <input type='text' name='amount' id='amount'/>
+                <input name="submit" type="submit"/>
+            </label>
+        </form>-->
+    </fieldset>
+</body>
+</html>

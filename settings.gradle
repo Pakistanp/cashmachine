@@ -1,0 +1,4 @@
+rootProject.name = 'cashmachine'
+include 'src:test:groovy'
+findProject(':src:test:groovy')?.name = 'groovy'
+
